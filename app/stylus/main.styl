@@ -1,0 +1,219 @@
+flex-version = flex
+support-for-ie = true
+vendor-prefixes = official
+
+@import "nib"
+@import "./node_modules/normalize.css/normalize.css"
+@import "fonts"
+@import "sprite"
+@import "type-utils"
+@import "./dist/vendor/font-awesome.min.css"
+base-font-size = 18px // Change to adjust the conversion process
+support-for-ie = false // Set to `false` for no `px` output with `rem`
+
+$color_text = #4D4D4D
+
+html, body
+  height: 100%;
+  min-height: 100%;
+
+img
+  width: 100%
+  height: auto
+.clearfix
+  clearfix()
+body
+  background-image: url(../images/bg.jpg)
+  background-repeat: repeat
+  font-family: "SFUIDisplayRegular"
+.container
+  min-height: 100%;
+  overflow hidden
+  height: 100%;
+  background-color: #fff
+  width 1200px
+  box-shadow: 0 0 4px rgba(0,0,0,0.5);
+  margin 0 auto
+  .header__box
+    background-color: #EDEDEE
+    height auto
+    display: flex
+    align-items center
+    .header__box-sb-l
+      flex-basis: 26%
+      border-right 1px solid #E3E3E3
+      //border-bottom 1px solid #E3E3E3
+      color #ADADAD
+      > div
+        margin: 1em
+        i
+          vertical-align: middle
+          font-size rem(35px)
+        div
+          vertical-align: middle
+          margin-left: 0.5em
+          padding-top: 2px
+          display: inline-block
+          span
+            font-family: "SFUIDisplayBold"
+        img
+          vertical-align: middle
+          display: inline-block
+          width: 50px
+    .header__box-sb-r
+      flex-basis: 75%
+      height: 35px
+      //border-bottom 1px solid #E3E3E3
+      padding: 1em
+      i
+        color: #C6C6C6
+        display: inline-block
+        font-size rem(18px)
+        vertical-align: middle
+        &.active
+          color #F3BD3D
+        &:hover
+          cursor: pointer
+      form
+        vertical-align: middle
+        margin-left: 1em
+        width: 93%
+        display: inline-block
+        div
+          position: relative
+          input
+            color $color_text
+            font-size rem(12px)
+            font-family: "SFUIDisplayRegular"
+            border-radius 5px
+            width: 94%
+            padding 8px 12px 8px 8px
+            min-height: 20px
+            height: auto
+            border 1px solid #E0E0E0
+          .send_btn
+            position: absolute
+            background-color: #29A5DC
+            right: -18px
+            border-bottom-right-radius 5px
+            border-top-right-radius 5px
+            padding 8px 15px
+            top: 0
+            bottom 0
+            &:hover
+              cursor: pointer
+            i
+              color #ffffff
+  .body__box
+    border-top 1px solid #E3E3E3
+    background-color: #fff
+    display: flex
+    height: calc(100% - 35px)
+    align-items center
+    .body__box-users
+      height: 100%
+      overflow-y auto
+      border-right 1px solid #E0E0E0
+      flex-basis: 25%
+      background-color: #fff
+      ul
+        padding: 0
+        margin 0 0 1.6em 0
+        list-style none
+       li
+         font-family "SFUIDisplayMedium"
+         position: relative
+         padding 1em
+         line-height 18px
+         &.active
+           background-color: #EDEDEE
+         &:hover
+           cursor: pointer
+           background-color: #e6deee
+         &.is_favorites .user__body .user__name
+           i
+             display: inline-block
+         img
+           vertical-align: middle
+           width: 50px
+           display: inline-block
+           height: 50px
+           border-radius 50%
+         .user__body
+           vertical-align: middle
+           padding-left: 0.5em
+           display: inline-block
+           .user__message-time
+             font-size rem(11px)
+             position: absolute
+             top: 1em
+             color #adadad
+             right: 1em
+           .user__name
+             margin-bottom: 14px
+             font-size rem(12px)
+             color #165174
+             i
+               display: none
+               font-size rem(14px)
+               margin-left: 2px
+               color #F3BD3D
+           .user__last-message
+             color #adadad
+             font-size rem(11px)
+           .user__message-status-new
+             position: absolute
+             right: 1em
+             top: 2.8em
+             i
+               animation 2.5s ease 0s normal none infinite running size
+            i
+              font-size rem(10px)
+              color #FF7F7F
+     .body__box-dialog
+       position: relative
+       flex-basis: 75%
+       overflow-y auto
+       height: 100%
+       .cssload-loader
+         display: none
+       &.loading
+         .cssload-loader
+           display: block
+       ul
+         padding: 0
+         margin: 0.5em 1em 2.5em 0.5em
+         list-style none
+         li
+           padding 0.5em 0
+           .body__box-dialog-text
+             vertical-align: middle
+             width calc(100% - 70px)
+             color #515151
+             display: inline-block
+             font-size rem(11px)
+             line-height 16px
+             font-family "SFUIDisplayMedium"
+           & + li
+             margin-top: 0.5em
+             padding-top 0.5em
+             border-top: 1px dashed #e6deee
+           &.empty__dialog
+             color #515151
+             position: absolute
+             top: 30%
+             width: 200px
+             left calc(50% - 100px)
+             font-family "SFUIDisplayMedium"
+           .body__box-dialog-avatar
+             display: inline-block
+             width: 65px
+             position: relative
+             text-align: center
+             img
+               vertical-align: middle
+               border-radius 50%
+               width: 50px
+               height: 50px
+@import "animation"
+@import "media"

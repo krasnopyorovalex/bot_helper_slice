@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Bot helper</title>
+  <link href="css/app.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+  <div class="header__box">
+    <div class="header__box-sb-l">
+      <div>
+        <i class="fa fa-headphones" aria-hidden="true"></i>
+        <div>
+          <span>PHP</span> Developers tool
+        </div>
+      </div>
+    </div>
+    <!-- /.header__box-sb-l -->
+    <div class="header__box-sb-r">
+      <i class="fa fa-star active" aria-hidden="true"></i>
+      <form action="#">
+        <div>
+          <input type="text" placeholder="Сообщение...">
+          <div class="send_btn">
+            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+          </div>
+          <!-- /.send_btn -->
+        </div>
+      </form>
+    </div>
+    <!-- /.header__box-sb-r -->
+    <div class="clearfix"></div>
+  </div>
+  <!-- /.header__box -->
+  <div class="body__box">
+    <div class="body__box-users">
+      <ul>
+        <li data-user="1" class="is_favorites">
+          <img src="images/ava-02.jpg" alt="ava">
+          <div class="user__body">
+            <div class="user__name">
+              Молодушка
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <div class="user__last-message">Как насчет кайфануть,а?</div>
+            <div class="user__message-time">19:47</div>
+            <div class="user__message-status-new">
+              <i class="fa fa-circle" aria-hidden="true"></i>
+            </div>
+          </div>
+          <!-- /.user__body -->
+        </li>
+        <li class="is_favorites" data-user="2">
+          <img src="images/ava.jpg" alt="ava">
+          <div class="user__body">
+            <div class="user__name">
+              Дарья Авдеева
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <div class="user__last-message">Привет, Штакет!</div>
+            <div class="user__message-time">02:47</div>
+          </div>
+          <!-- /.user__body -->
+        </li>
+        <li data-user="3">
+          <img src="images/ava-03.jpeg" alt="ava">
+          <div class="user__body">
+            <div class="user__name">
+              Таня
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <div class="user__last-message">Все получила, результат п...</div>
+            <div class="user__message-time">10:47</div>
+            <div class="user__message-status-new">
+              <i class="fa fa-circle" aria-hidden="true"></i>
+            </div>
+          </div>
+          <!-- /.user__body -->
+        </li>
+        <li data-user="4">
+          <img src="images/ava-01.jpeg" alt="ava">
+          <div class="user__body">
+            <div class="user__name">
+              Шнур
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <div class="user__last-message">Как насчет кайфануть,а?</div>
+            <div class="user__message-time">09:07</div>
+          </div>
+          <!-- /.user__body -->
+        </li>
+        <li data-user="5">
+          <img src="images/ava-04.jpg" alt="ava">
+          <div class="user__body">
+            <div class="user__name">
+              Ритос
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <div class="user__last-message">Привет, Штакет!</div>
+            <div class="user__message-time">14:43</div>
+          </div>
+          <!-- /.user__body -->
+        </li>
+        <li data-user="6">
+          <img src="images/ava-05.jpg" alt="ava">
+          <div class="user__body">
+            <div class="user__name">
+              +7 (978) 109-40-09
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <div class="user__last-message">Все получила, результат п...</div>
+            <div class="user__message-time">11:07</div>
+            <div class="user__message-status-new">
+              <i class="fa fa-circle" aria-hidden="true"></i>
+            </div>
+          </div>
+          <!-- /.user__body -->
+        </li>
+        <li data-user="7">
+          <img src="images/ava-06.jpg" alt="ava">
+          <div class="user__body">
+            <div class="user__name">
+              Патрон
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <div class="user__last-message">Как насчет кайфануть,а?</div>
+            <div class="user__message-time">19:47</div>
+            <div class="user__message-status-new">
+              <i class="fa fa-circle" aria-hidden="true"></i>
+            </div>
+          </div>
+          <!-- /.user__body -->
+        </li>
+        <li data-user="8">
+          <img src="images/ava-07.jpg" alt="ava">
+          <div class="user__body">
+            <div class="user__name">
+              Колямба
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <div class="user__last-message">Сегодня вхлам!)</div>
+            <div class="user__message-time">07.03.2017</div>
+          </div>
+          <!-- /.user__body -->
+        </li>
+        <li data-user="9">
+          <img src="images/ava-08.jpg" alt="ava">
+          <div class="user__body">
+            <div class="user__name">
+              Девушка-пышка
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <div class="user__last-message">Я в трансе, ай-яй-яй...</div>
+            <div class="user__message-time">06.03.2017</div>
+            <div class="user__message-status-new">
+              <i class="fa fa-circle" aria-hidden="true"></i>
+            </div>
+          </div>
+          <!-- /.user__body -->
+        </li>
+        <li data-user="10">
+          <img src="images/ava-10.jpeg" alt="ava">
+          <div class="user__body">
+            <div class="user__name">
+              Шмурдяк
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <div class="user__last-message">50 грамм беленькой бушь?</div>
+            <div class="user__message-time">05.03.2017</div>
+            <div class="user__message-status-new">
+              <i class="fa fa-circle" aria-hidden="true"></i>
+            </div>
+          </div>
+          <!-- /.user__body -->
+        </li>
+        <li data-user="11" class="is_favorites">
+          <img src="images/ava-11.jpg" alt="ava">
+          <div class="user__body">
+            <div class="user__name">
+              Faker
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <div class="user__last-message">Купите мне слона!!!</div>
+            <div class="user__message-time">01.03.2017</div>
+          </div>
+          <!-- /.user__body -->
+        </li>
+        <li data-user="12">
+          <img src="images/ava-12.jpeg" alt="ava">
+          <div class="user__body">
+            <div class="user__name">
+              Тимон
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <div class="user__last-message">Все получила, результат п...</div>
+            <div class="user__message-time">01.03.2017</div>
+            <div class="user__message-status-new">
+              <i class="fa fa-circle" aria-hidden="true"></i>
+            </div>
+          </div>
+          <!-- /.user__body -->
+        </li>
+      </ul>
+    </div>
+    <!-- /.body__box-users -->
+    <div class="body__box-dialog">
+      <div class="cssload-loader">
+        <div class="cssload-inner cssload-one"></div>
+        <div class="cssload-inner cssload-two"></div>
+        <div class="cssload-inner cssload-three"></div>
+      </div>
+      <ul>
+        <li class="empty__dialog">Выберите диалог...</li>
+        <!--<li>-->
+          <!--<div class="body__box-dialog-avatar">-->
+            <!--<img src="images/ava.jpg" alt="ava">-->
+          <!--</div>-->
+          <!--<div class="body__box-dialog-text">-->
+            <!--Обоссаться как смешно:)-->
+          <!--</div>-->
+        <!--</li>-->
+        <!--<li>-->
+          <!--<div class="body__box-dialog-avatar">-->
+            <!--<i class="fa fa-user" aria-hidden="true"></i>-->
+          <!--</div>-->
+          <!--<div class="body__box-dialog-text">-->
+            <!--Там крайне опасно...-->
+          <!--</div>-->
+        <!--</li>-->
+        <!--<li>-->
+          <!--<div class="body__box-dialog-avatar">-->
+            <!--<img src="images/ava.jpg" alt="ava">-->
+          <!--</div>-->
+          <!--<div class="body__box-dialog-text">-->
+            <!--Опасно жить без кабака! Звони Санче, потом всливу, а также в дым, после рвать танцпол будете на раз-два:)-->
+          <!--</div>-->
+        <!--</li>-->
+        <!--<li>-->
+          <!--<div class="body__box-dialog-avatar">-->
+            <!--<i class="fa fa-user" aria-hidden="true"></i>-->
+          <!--</div>-->
+          <!--<div class="body__box-dialog-text">-->
+            <!--Там крайне опасно...-->
+          <!--</div>-->
+        <!--</li>-->
+        <!--<li>-->
+          <!--<div class="body__box-dialog-avatar">-->
+            <!--<img src="images/ava.jpg" alt="ava">-->
+          <!--</div>-->
+          <!--<div class="body__box-dialog-text">-->
+            <!--Опасно жить без кабака! Звони Санче, потом всливу, а также в дым, после рвать танцпол будете на раз-два:)-->
+          <!--</div>-->
+        <!--</li>-->
+        <!--<li>-->
+          <!--<div class="body__box-dialog-avatar">-->
+            <!--<i class="fa fa-user" aria-hidden="true"></i>-->
+          <!--</div>-->
+          <!--<div class="body__box-dialog-text">-->
+            <!--Там крайне опасно...-->
+          <!--</div>-->
+        <!--</li>-->
+        <!--<li>-->
+          <!--<div class="body__box-dialog-avatar">-->
+            <!--<img src="images/ava.jpg" alt="ava">-->
+          <!--</div>-->
+          <!--<div class="body__box-dialog-text">-->
+            <!--Опасно жить без кабака! Звони Санче, потом всливу, а также в дым, после рвать танцпол будете на раз-два:)-->
+          <!--</div>-->
+        <!--</li>-->
+        <!--<li>-->
+          <!--<div class="body__box-dialog-avatar">-->
+            <!--<i class="fa fa-user" aria-hidden="true"></i>-->
+          <!--</div>-->
+          <!--<div class="body__box-dialog-text">-->
+            <!--Там крайне опасно...-->
+          <!--</div>-->
+        <!--</li>-->
+        <!--<li>-->
+          <!--<div class="body__box-dialog-avatar">-->
+            <!--<img src="images/ava.jpg" alt="ava">-->
+          <!--</div>-->
+          <!--<div class="body__box-dialog-text">-->
+            <!--Нужно идти в кабак!-->
+          <!--</div>-->
+        <!--</li>-->
+        <!--<li>-->
+          <!--<div class="body__box-dialog-avatar">-->
+            <!--<i class="fa fa-user" aria-hidden="true"></i>-->
+          <!--</div>-->
+          <!--<div class="body__box-dialog-text">-->
+            <!--Уйти бы всливу, да не с кем :(-->
+          <!--</div>-->
+        <!--</li>-->
+        <!--<li>-->
+          <!--<div class="body__box-dialog-avatar">-->
+            <!--<img src="images/ava.jpg" alt="ava">-->
+          <!--</div>-->
+          <!--<div class="body__box-dialog-text">-->
+            <!--Да так себе... Мутим-крутим, лавешку все урвать хотим-->
+          <!--</div>-->
+        <!--</li>-->
+        <!--<li>-->
+          <!--<div class="body__box-dialog-avatar">-->
+            <!--<i class="fa fa-user" aria-hidden="true"></i>-->
+          <!--</div>-->
+          <!--<div class="body__box-dialog-text">-->
+            <!--Привет, как дела?-->
+          <!--</div>-->
+        <!--</li>-->
+        <!--<li>-->
+          <!--<div class="body__box-dialog-avatar">-->
+            <!--<img src="images/ava.jpg" alt="ava">-->
+          <!--</div>-->
+          <!--<div class="body__box-dialog-text">-->
+            <!--Привет!-->
+          <!--</div>-->
+        <!--</li>-->
+      </ul>
+    </div>
+    <!-- /.body__box-dialog -->
+    <div class="clearfix"></div>
+  </div>
+  <!-- /.body__box -->
+</div>
+<!-- /.container -->
+
+<script type="text/javascript" src="vendor/jquery.min.js"></script>
+<script type="text/javascript" src="js/app.min.js"></script>
+</body>
+</html>
